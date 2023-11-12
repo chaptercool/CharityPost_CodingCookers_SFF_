@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CharityPost</title>
+    <link rel="stylesheet" href="/css/post_edit.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header_logo">
+                <a href="/main.html"><img src="/img/logo_portr.jpg" alt="Logotype"></a>
+            </div>
+            <div class="header_right">
+                <div class="header_search">
+                    <form action="index.php" method="post">
+                        <input type="text" name="search" placeholder="Search for...">
+                        <input type="submit" name="submit" value="Find">
+                    </form>
+                </div>
+                <div class="header_auth">
+                    <a href="/with_account_activities/auth.html">Sign in</a>
+                    <a href="/account_creation.html">Sign up</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main__content__article">
+            <h2>Edit post</h2>
+            <form action="" method="post">
+                <fieldset class="post_edit">
+                    <label for="post_image">Attached photos</label>
+                    <input type="file" name="post_image">
+
+                    <label for="post_title">Title</label>
+                    <input type="text" name="post_title" id="post_title" placeholder="My beautiful parrot got eaten by cat in Kielnarowa">
+
+                    <label for="short_desc">Short description</label>
+                    <textarea name="short_desc" id="short_desc" cols="30" rows="10">"The quick brown fox jumps over the lazy dog" is an English-language pangram -- a sentence that contains all the letters of the alphabet. The phrase is commonly used for touch-typing practice, testing typewriters and computer keyboards, displaying examples of fonts, and other applications involving text where the use of all letters in the alphabet is desired.</textarea>
+
+                    <label for="category">Category</label>
+                    <select name="category" id="category">
+                        <option value="null">Choose category</option>
+                        <option value="animals">Animals</option>
+                        <option value="people">People</option>
+                    </select>
+
+                    <label for="goal">Goal</label>
+                    <input type="number" name="goal" id="goal" placeholder="1000$">
+
+                    <label for="due_to_date">Fundraising due to</label>
+                    <input type="date" name="due_to_date">
+
+                    <input type="submit" name="savechanges" id="savechanges" value="Save changes">
+                </fieldset>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

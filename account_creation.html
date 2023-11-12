@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign up for CharityPost</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header_logo">
+                <a href="/main.html"><img src="/img/logo_portr.jpg" alt="Logotype"></a>
+            </div>
+            <div class="header_right">
+                <div class="header_search">
+                    <form action="index.php" method="post">
+                        <input type="text" name="search" placeholder="Search for...">
+                        <input type="submit" name="submit" value="Find">
+                    </form>
+                </div>
+                <div class="header_auth">
+                    <a href="/with_account_activities/auth.html">Sign in</a>
+                    <a href="/account_creation.html">Sign up</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main__content__article">
+            <fieldset class="auth_field">
+                <legend>Sign up your first account</legend>
+                <p>Let's start build the new world of charity together!</p>
+
+                <label for="username">Your name</label>
+                <input type="text" name="username" id="username" class="auth_field" placeholder="John Aplessed" required/>
+
+                <label for="usermail">Your e-mail adress</label>
+                <input type="text" name="usermail" id="usermail" class="auth_field" placeholder="fancyemailaddress@mail.com" required/>
+
+                <label for="userphone">Your phone number</label>
+                <input type="text" name="userphone" id="userphone" class="auth_field" placeholder="+10123456789" required/>
+
+                <label for="userpassword">Password</label>
+                <input type="password" name="userpassword" id="userpassword" class="auth_field" required/>
+
+                <label for="userpassword">Repeat password</label>
+                <input type="password" name="userpassword" id="userpassword" class="auth_field" required/>
+
+
+                <input type="submit" name="auth_confirmation" value="Sign up" />
+
+                <p>By signing up, You confirm that you have read our <a href="https://example.com">user agreement</a>.</p>
+            </fieldset>
+        </div>
+    </main>
+
+    <footer>
+        <p>(c) CharityPost, 2023</p>
+        <p>Follow us on social networks:</p>
+        <div class="footer__social">
+            <a href="https://www.facebook.com/"><img src="/img/facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/"><img src="/img/instagram.png" alt="Instagram"></a>
+            <a href="https://twitter.com/"><img src="/img/twitter.webp" alt="Twitter"></a>
+        </div>
+    </footer>
+</body>
+</html>
